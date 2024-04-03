@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Profie</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family:"Sofia", sans-serif;;
+            background-color: #78909C;
+            color: white;
+            background-image: url();
+        }
+        img{
+            border-radius: 8px;
+            height: 250px;
+            width: 300px;
+            
+        }
+        #pro{
+            
+            text-align: center;
+            background-color: rgba(0,0,255,0.2);
+        }
+        h1{
+            
+            font-size: xx-large;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        table,tr,td,th{
+            border: 4px solid white;
+            border-collapse: collapse;
+            border-color: yellowgreen;
+        }
+        th,td{
+            padding: 10px;
+            text-align: center;
+        }
+        #button{
+            border: 1px solid white;
+            padding: 5px;
+            text-decoration: none;
+            margin-left: 100px;
+            border-radius: 5px;
+            background-color: gray;
+            color:white ;
+        }
+        fieldset,legend{
+            background-color: rgba(102,51,153,0.1);
+        }
+        ul{
+            list-style-type: disc;
+            margin: 20px;
+        }
+        table{
+            background-color: blueviolet;
+            border-radius: 5px;
+        }
+        ul#navbar{
+            height: 40px;
+            text-align: right;
+        }
+        ul#navbar li{
+            display:inline-block;
+            padding-left: 20px;
+            width: 80px;
+            text-align: center;
+        }
+        ul#navbar li a{
+            text-decoration: none;
+            color: white;
+            line-height: 40px;
+        }
+        ul#navbar li:hover{
+            background-color: white;
+
+        }
+        ul#navbar li a:hover{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="pro">My Profile</h1>
+    <ul id="navbar">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">AboutUs</a></li>
+        <li><a href="/">Feedback</a></li>
+        </ul>
+    <hr>
+    <br>
+    <img align="right" src="image.jpg" alt="file not found">
+
+    <h1>Shivansh Dubey</h1>
+    <br>
+    <p>shivansh.34368@gmail.com</p><br>
+    <p>+91-821854XXXX</p>
+    <br>
+    <h2><b><u>About Us</h2></b></u>
+    <br>
+    <p>Hi,I'm Shivansh Dubey </p>
+    <p>I lives in moradabad currently living in Ghaziabad.</p>
+    <p>I'm currently pursuing<mark> Masters of Computer Application </mark>from <a href="https://www.kiet.edu/">KIET Group Of Institute</a></p>
+    <p>A hardworking student  with good  command over subject & various qualities.</p>
+    <br>
+    <hr>
+    <br>
+    <h2><b>Education Qualification</h2></b><br>
+    <table>
+        <tr>
+        <th>SNO</th>
+        <th>Board/University</th>
+        <th>Course/Subject</th>
+        <th>Year</th>
+        <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Teerthanker Mahaveer University</td>
+            <td>BCA</td>
+            <td>2020-23</td>
+            <td>88.6%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CBSE</td>
+            <td>PCM with CS</td>
+            <td>2019-20</td>
+            <td>75%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>CBSE</td>
+            <td>Social Science,Mathematics,Science,Hindi,English</td>
+            <td>2017-18</td>
+            <td>74.9%</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+<h2>About My College</h2>
+<br>
+<a id="button" href="https://www.kiet.edu/">My College</a>
+<br>
+<br>
+<hr>
+<h2>Language Known</h2>
+<ul>
+    <li>C</li>
+    <li>HTML & CSS</li>
+    <li>C++</li>
+</ul>
+<hr>
+<br>
+<h2>Accolade</h2>
+<ul>
+    <li>Got Principal Excellence Award in 4<sup>th</sup>,5<sup>th</sup>,6<sup>th</sup>semester</li>
+</ul>
+<hr>
+<br>
+<h2>Certificates</h2>
+<ul>
+    <li>Got Certificate in apptitude test from KIET Group Of Institute</li>
+    <li>Got Participation Certificate in National Science Day Quiz </li>
+    <li>Got C Programming LinkedIn Certificate</li>
+</ul>
+<hr>
+<br>
+<h2>Contact Us</h2>
+<br>
+<form action="#" method="Post">
+    <fieldset>
+        <legend><b>Contact</legend></b>
+        <label for="Name">Name</label><br>
+        <input type="text" name="Name" placeholder="Your Name"/><br>
+        <label for="Email">Email</label><br>
+        <input type="email" name="Email" placeholder="Your Email"/><br>
+        <label for="Comment">Comment</label><br>
+        <textarea name="Comment" placeholder="Comment" rows="10" cols="30" value="" width="200px"></textarea><br><br>
+        <input type="button" onclick="alert('Successfully Sent')" value="submit">
+        <input type="reset" name="clear" value="clear">
+    </fieldset>
+</form>
+</body>
+</html>
