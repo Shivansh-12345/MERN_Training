@@ -1,0 +1,19 @@
+/* h1{
+    color: rebeccapurple;
+    background-color: yellowgreen;
+}
+body{
+    background-color: pink;
+}
+button{
+    background-color: bisque;
+} */
+#box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    color:white;
+    text-align: center;
+    background-color: dodgerblue;
+}
