@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Bootstrap/CSS/bootstrap.css" rel="stylesheet">
+    <script src="./Bootstrap/JS/bootstrap.js"></script>
+    <title>Student Registration</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center flex-column text-center m-3">
+    <h1>Student Registration</h1>
+    <div class="border border-1 border-danger rounded p-2 col-4 mx-auto">
+        <form name="studentFrm" class="text-start" onsubmit="return validate();">
+            <div>
+                <label>Enter Student Name</label><br>
+                <input type="text" name="name" id="name" class="col-12"/><br>
+                <p id="nameErr" class="text-danger"></p>
+                </div>
+                <div>
+                <label>Enter Mobile Number</label><br>
+                <input type="tel" maxlength="12" name="mobile" id="mobile" class="col-12"/><br>
+                <p id="mobileErr" class="text-danger"></p>
+                </div>
+                <div>
+                <label>Enter Email</label><br>
+                <input type="email" name="email" id="email" class="col-12"/><br>
+                <p id="emailErr" class="text-danger"></p>
+                </div>
+                <div class="border border-1 border-danger rounded p-2">
+                    <label>Select Hobbies</label><br>
+                    <input type="checkbox" name="hobbies" id="hobbies" value="Music"/>Music
+                    <input type="checkbox" name="hobbies" id="hobbies"value="Dancing"/>Dancing
+                    <input type="checkbox" name="hobbies" id="hobbies"value="Singing"/>Singing
+                    <p id="hobbieErr" class="text-danger"/>
+
+                </div>
+                <div>
+                    <label>Select Your Language</label><br>
+                    <select name="lang">
+                    <option value="select"/>Selet</option>
+                    <option value="java"/>Java</option>
+                    <option value="javascript"/>Javascript</option>
+                    <option value="kotlin"/>Kotlin</option>
+                    </select>
+                    <p id="langErr" class="text-danger"/>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-outline-warning" name="submit">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/studentinfo.js"></script>
+</body>
+</html>

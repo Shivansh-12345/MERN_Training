@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Bootstrap/CSS/bootstrap.css" rel="stylesheet">
+    <script src="./Bootstrap/JS/bootstrap.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container justify-content-center text-center">
+        <h1 class="text-success">Calculator</h1>
+        <div class="border border-1 border-danger rounded p-2 col-4 mx-auto">
+        <table class="table table-secondary table-striped-columns">
+            <tbody>
+                <input type="text" class=" form-control col-12 text-end" id="display" readonly/>
+                <tr>
+                    <td><button onclick="toclear()" class="btn btn-primary p-3">C</td></button>
+                    <td><button onclick="toresult('/')" class="btn btn-primary p-3">/</td></button>
+                    <td><button onclick="toresult('*')" class="btn btn-primary p-3">*</td></button>
+                    <td><button onclick="toresult('+')" class="btn btn-primary p-3">+</td></button>
+                </tr>
+                <tr>
+                    <td><button onclick="toresult('7');" class="btn btn-primary p-3">7</td></button>
+                    <td><button onclick="toresult('8')" class="btn btn-primary p-3">8</td></button>
+                    <td><button onclick="toresult('9')"class="btn btn-primary p-3">9</td></button>
+                    <td><button onclick="toresult('-')" class="btn btn-primary p-3">-</td></button>
+                </tr>
+                <tr>
+                    <td><button onclick="toresult('4')" class="btn btn-primary p-3">4</td></button>
+                    <td><button onclick="toresult('5')" class="btn btn-primary p-3">5</td></button>
+                    <td><button onclick="toresult('6')" class="btn btn-primary p-3">6</td></button>
+                    <td><button onclick="toresult('%')" class="btn btn-primary p-3">%</td></button>
+                </tr>
+                <tr>
+                    <td><button onclick="toresult('1')" class="btn btn-primary p-3">1</td></button>
+                    <td><button onclick="toresult('2')" class="btn btn-primary p-3">2</td></button>
+                    <td><button onclick="toresult('3')" class="btn btn-primary p-3">3</td></button>
+                    <td rowspan="2"><button onclick="tocalculate()" class="btn btn-primary btn-large p-5 fs-4">ENTER</td></button>
+                </tr>
+                <tr>
+                    <td><button onclick="toresult('0')"class="btn btn-primary p-3">0</td></button>
+                    <td><button onclick="toresult('.')"class="btn btn-primary p-3">.</td></button>
+                    <td><button onclick="toresult('00')"class="btn btn-primary p-3">00</td></button>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
