@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS First Page</title>
+</head>
+<body onload="openURL();">
+    <p id="info"></p>
+    <button onmouseout="openURL(event);" name="openURL">Open URL</button>
+    <button id="alert">Open Alert</button>
+    <button id="msg">Open Message</button>
+    <script>
+        function openURL(event){
+            //window.open("https://www.google.com");
+           // document.location="https://www.google.com";
+            //history.forward();
+            //this is 1type of event
+            console.log(event);
+            //document.getElementById("info").innerHTML="<h1>Hello</h1>";
+           // document.getElementById("info").innerHTML=navigator.userAgent;
+           // document.getElementById("info").innerHTML=navigator.appName;
+            document.getElementById("info").innerHTML=event.target.name;
+            //document.getElementById("info").innerHTML=navigator.appVersion;
+            //document.getElementById("info").innerText="<h1>Hello</h1>";
+            //this is 2type of event
+            const alertbutton=document.querySelector("#alert");
+            alertbutton.onclick=()=>{
+                alert("welcome to js");
+            }
+            //this is 3type of event(imp)
+            const msgbtn=document.getElementById("msg");
+            msgbtn.addEventListener("click",()=>{
+                alert("this is msg");
+            });
+
+        }
+    </script>
+</body>
+</html>
