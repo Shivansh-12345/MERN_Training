@@ -7,13 +7,21 @@ body{
 }
 button{
     background-color: bisque;
-} */
-#box{
-    height: 100px;
+} 
+ #box{
+    height: 250px;
     width: 100px;
     border: 1px solid black;
-    margin: 5px;
-    color:white;
-    text-align: center;
-    background-color: dodgerblue;
+     margin: 5px; 
+    color:white; 
+     text-align: center; 
+     background-color: dodgerblue; 
+ }  */
+
+.content{
+    color: blue;
+}
+
+.newclass{
+    background-color: green;
 }
